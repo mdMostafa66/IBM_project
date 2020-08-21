@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./title-pic.jpg" type="image/x-icon">
+    <title>I B M - The help center</title>
+	<!--Fontawesome link-->
+    <script src="https://kit.fontawesome.com/1a2984d1a9.js" crossorigin="anonymous"></script>
+	<!--Twitter Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!--Main stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--====================-->
+	<!-- NAVIGATION BAR SECTON -->
+	<!--====================-->
+  <header>
+    <nav class=" my-nav navbar navbar-light navbar-expand-lg ">
+      <div class="container">
+      <div class="logo">
+        <img width="80px" src="./logo.png" alt="">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+    </nav>
+	<!--====================-->
+	<!-- CAROUSEL SECTON -->
+	<!--====================-->
+    <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('https://i.imgur.com/NnzxG4S.jpg')"></div>
+        <div class="carousel-item " style="background-image: url('https://i.imgur.com/w439mEw.jpg')"></div>
+        <div class="carousel-item " style="background-image: url('https://i.imgur.com/cpIrOo1.jpg')"></div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+	<!--====================-->
+	<!-- PACKEG SECTON -->
+	<!--====================-->
+  <section class="service-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 service-title">
+          <h1>Get Services</h1>
+        </div>
+      </div>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>  
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary btn-sign-up" data-toggle="modal" data-target="#exampleModal">
+  Sign Up
+</button>
+	<!--====================-->
+	<!-- MODAL SECTON -->
+	<!--====================-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Sing up with email</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form>
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone</small>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Remember me</label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary btn-pricing">Get access</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Gold</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary btn-pricing">Get access</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary btn-pricing">Get access</button>
+          </div>
+        </div>
+      </div>
+	<!--====================-->
+	<!-- Services SECTON -->
+	<!--====================-->
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header card-header-title">
+            <h4 class="my-0 font-weight-normal">Web Design</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title title-icon"><i class="fab fa-css3"></i></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ea quis? Inventore odio
+              Enim, ea quis? Inventore odio
+            </p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-service">Contact us</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header card-header-title">
+            <h4 class="my-0 font-weight-normal">Web Development</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title title-icon"><i class="fas fa-code"></i></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ea quis? Inventore odio
+              Enim, ea quis? Inventore odio
+            </p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-service">Contact us</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header card-header-title">
+            <h4 class="my-0 font-weight-normal">SEO</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title title-icon"><i class="fas fa-search-dollar"></i></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ea quis? Inventore odio
+              Enim, ea quis? Inventore odio
+            </p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-service">Contact us</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header card-header-title">
+            <h4 class="my-0 font-weight-normal">Business Advice</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title title-icon"><i class="fas fa-business-time"></i></i></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ea quis? Inventore odio
+              Enim, ea quis? Inventore odio
+            </p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-service">Contact us</button>
+          </div>
+        </div>
+    </div>
+    </section>
+	<!--====================-->
+	<!-- SKILL SECTON -->
+	<!--====================-->
+    <section class="work-progress">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <center><h2 style="color:#c3c6ea;">Team Experiance</h2></center>
+            <h6>HTML codding experiance</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+            <br>
+            <h6>CSS codding experiance</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+            <br>
+            <h6>JavaScript codding experiance</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+            <br>
+            <h6>Wordpress codding experiance</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+            <br>
+            <h6>PHP codding experiance</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="col-md-6 map-sec">
+            <h6>Find us via maps</h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14734.061834496199!2d91.86110215000001!3d22.59721885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1593805305873!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+	<!--====================-->
+	<!-- ABOUT SECTON -->
+	<!--====================-->
+    <section class="about-us">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-md-6 about-content">
+            <div class="about-title">
+              <h1>Who we are?</h1>
+            </div>
+            <div class="about-text">
+              <p class="text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aliquid dolores tenetur excepturi quo ad aperiam provident adipisci, magnam dolore eveniet nam est modi necessitatibus tempore nemo. Perspiciatis quasi repudiandae laborum dignissimos facilis nostrum ullam enim incidunt, vero mollitia magni molestias a quia blanditiis quisquam eveniet excepturi voluptatum recusandae consectetur. Dolores aspernatur explicabo nesciunt assumenda facere, fuga molestias excepturi placeat modi odio nisi iusto a illum quasi voluptates cupiditate, id repudiandae at natus esse officiis? Laudantium, voluptatem ad? Voluptas aspernatur amet quia minima fuga sapiente vel, porro debitis reiciendis ratione? Amet soluta esse veritatis reiciendis quidem obcaecati, officiis nostrum itaque?
+              </p>
+              <button class="btn btn-info about-btn">READ MORE</button>
+            </div>
+          </div>
+          <div class="mt-4 mt-md-0 col-md-6">
+            <div class="about-img">
+              <img src="./team.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<!--====================-->
+	<!-- FOOTER SECTON -->
+	<!--====================-->
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 col-sm-6">
+            <form class="form-signin">
+              <h1 class="h3 mb-3 font-weight-normal">Log in your account</h1>
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""><br>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="btn btn-lg btn-info btn-block" type="submit">Log in</button>
+            </form>
+          </div>
+          <div class="col-6 col-md-3 col-sm-6">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-sm-6">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-sm-6">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 copyright">
+          <h5>&copy; 2020 All rights reserved.</h5>
+        </div>
+      </div>  
+      </footer>
+	<!--====================-->
+	<!-- ESSENTIAL JS LINK -->
+	<!--====================-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
